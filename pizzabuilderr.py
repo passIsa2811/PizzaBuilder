@@ -15,12 +15,12 @@ def main(page: ft.Page):
     def add_onion(e):
         onion.visible = onion_switch.value
         page.update()
-
+        
     # images
-    basePizza = ft.Image(src="assets/images/Recipe_Cheese.webp", height=350, width=350)
-    pepperoni = ft.Image(src="assets/images/pepperoni yummm.webp", visible=False, height=350, width=350)
-    ham = ft.Image(src="assets/images/hammmmm.webp", visible=False, height=350, width=350)
-    onion = ft.Image(src="assets/images/onion.webp", visible=False, height=350, width=350)
+    basePizza = ft.Image(src="images/Recipe_Cheese.webp", height=350, width=350)
+    pepperoni = ft.Image(src="images/pepperoni yummm.webp", visible=False, height=350, width=350)
+    ham = ft.Image(src="images/hammmmm.webp", visible=False, height=350, width=350)
+    onion = ft.Image(src="images/onion.webp", visible=False, height=350, width=350)
 
     #switches
 
@@ -51,4 +51,4 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.LIGHT
     page.add(pizza, controls)
 
-ft.run(main)
+ft.run(main=main, assets_dir="assets")
